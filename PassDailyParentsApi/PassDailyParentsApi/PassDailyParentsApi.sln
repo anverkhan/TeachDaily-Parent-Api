@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassDailyParentsApi.Data", "PassDailyParentsApi.Data\PassDailyParentsApi.Data.csproj", "{78439A34-B694-4893-A7AD-9680B5B17EAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassDailyParentsApi.Service", "PassDailyParentsApi.Service\PassDailyParentsApi.Service.csproj", "{669F86D9-00F8-446B-B8D6-883D1694D0D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78439A34-B694-4893-A7AD-9680B5B17EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78439A34-B694-4893-A7AD-9680B5B17EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78439A34-B694-4893-A7AD-9680B5B17EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78439A34-B694-4893-A7AD-9680B5B17EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669F86D9-00F8-446B-B8D6-883D1694D0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669F86D9-00F8-446B-B8D6-883D1694D0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669F86D9-00F8-446B-B8D6-883D1694D0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669F86D9-00F8-446B-B8D6-883D1694D0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78439A34-B694-4893-A7AD-9680B5B17EAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PassDailyParentsApi.Data</RootNamespace>
+    <AssemblyName>PassDailyParentsApi.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\DataHelper.cs" />
+    <Compile Include="Model\AboutusInfo.cs" />
+    <Compile Include="Model\AboutusInfoRoot.cs" />
+    <Compile Include="Model\AcademicInfo.cs" />
+    <Compile Include="Model\AccademicInfo.cs" />
+    <Compile Include="Model\AccademicInfoRoot.cs" />
+    <Compile Include="Model\ActivityInfo.cs" />
+    <Compile Include="Model\ActivityInfoRoot.cs" />
+    <Compile Include="Model\AlbumImageInfo.cs" />
+    <Compile Include="Model\AlbumImageInfoRoot.cs" />
+    <Compile Include="Model\AlbumInfo.cs" />
+    <Compile Include="Model\AlbumInfoRoot.cs" />
+    <Compile Include="Model\AnswerSubmitInfo.cs" />
+    <Compile Include="Model\AppInboxInfo.cs" />
+    <Compile Include="Model\AppInboxInfoNew.cs" />
+    <Compile Include="Model\AppInboxInfoNewRoot.cs" />
+    <Compile Include="Model\AppInboxInfoRoot.cs" />
+    <Compile Include="Model\AppInboxInfoRootNew.cs" />
+    <Compile Include="Model\AppInboxNewInfo.cs" />
+    <Compile Include="Model\AppInboxRequestInfo.cs" />
+    <Compile Include="Model\AssignmentAttachmentInfo.cs" />
+    <Compile Include="Model\AssignmentFileInfo.cs" />
+    <Compile Include="Model\AssignmentInfo.cs" />
+    <Compile Include="Model\AssignmentInsertInfo.cs" />
+    <Compile Include="Model\AssignmentListInfo.cs" />
+    <Compile Include="Model\AssignmentListRootInfo.cs" />
+    <Compile Include="Model\AssignmentStatusNewRootInfo.cs" />
+    <Compile Include="Model\AssignmentStatusRootInfo.cs" />
+    <Compile Include="Model\AssignmentSubmitInfo.cs" />
+    <Compile Include="Model\AttendanceReportInfo.cs" />
+    <Compile Include="Model\AttendanceReportInfoRoot.cs" />
+    <Compile Include="Model\BlockStatusInfo.cs" />
+    <Compile Include="Model\BlockStatusRootInfo.cs" />
+    <Compile Include="Model\CarryingListInfo.cs" />
+    <Compile Include="Model\CarryingListRootInfo.cs" />
+    <Compile Include="Model\CarryingTypeInfo.cs" />
+    <Compile Include="Model\CarryingTypeRootInfo.cs" />
+    <Compile Include="Model\ChapterInfo.cs" />
+    <Compile Include="Model\ChapterRootInfo.cs" />
+    <Compile Include="Model\ChildInfo.cs" />
+    <Compile Include="Model\ChildInfoRoot.cs" />
+    <Compile Include="Model\ClassListInfo.cs" />
+    <Compile Include="Model\ClassListRootInfo.cs" />
+    <Compile Include="Model\ContactUsInfo.cs" />
+    <Compile Include="Model\ContactUsRootInfo.cs" />
+    <Compile Include="Model\ConveyorsInfo.cs" />
+    <Compile Include="Model\ConveyorsInfoRoot.cs" />
+    <Compile Include="Model\DAnswerInfo.cs" />
+    <Compile Include="Model\DAnswerRootInfo.cs" />
+    <Compile Include="Model\DashboardInfo.cs" />
+    <Compile Include="Model\DashboardTileInfo.cs" />
+    <Compile Include="Model\DbResultInfo.cs" />
+    <Compile Include="Model\DeleteAnswerInfo.cs" />
+    <Compile Include="Model\DExamResultInfo.cs" />
+    <Compile Include="Model\DExamResultRootInfo.cs" />
+    <Compile Include="Model\DistrictClassListRootInfo.cs" />
+    <Compile Include="Model\DistrictListInfo.cs" />
+    <Compile Include="Model\DOnlineExamStudentResultInfo.cs" />
+    <Compile Include="Model\DQuestionListInfo.cs" />
+    <Compile Include="Model\DQuestionListRootInfo.cs" />
+    <Compile Include="Model\EnquiryFilterInfo.cs" />
+    <Compile Include="Model\EnquiryListInfo.cs" />
+    <Compile Include="Model\EnquiryListInfoRoot.cs" />
+    <Compile Include="Model\EnquiryRequestInfo.cs" />
+    <Compile Include="Model\EventInfo.cs" />
+    <Compile Include="Model\EventRootInfo.cs" />
+    <Compile Include="Model\ExamMarkDetailsCEInfo.cs" />
+    <Compile Include="Model\ExamMarkDetailsCEInfoRoot.cs" />
+    <Compile Include="Model\ExamMarkDetailsInfo.cs" />
+    <Compile Include="Model\ExamMarkDetailsInfoRoot.cs" />
+    <Compile Include="Model\ExamNameInfo.cs" />
+    <Compile Include="Model\ExamNameInfoRoot.cs" />
+    <Compile Include="Model\FeesPaidInfo.cs" />
+    <Compile Include="Model\FeesPaidInfoRoot.cs" />
+    <Compile Include="Model\FileListInfo.cs" />
+    <Compile Include="Model\FileListRootInfo.cs" />
+    <Compile Include="Model\GpsInfo.cs" />
+    <Compile Include="Model\GpsRootInfo.cs" />
+    <Compile Include="Model\GpsVehichleInfo.cs" />
+    <Compile Include="Model\GpsVehichleRootInfo.cs" />
+    <Compile Include="Model\HolidayInfo.cs" />
+    <Compile Include="Model\HolidayRootInfo.cs" />
+    <Compile Include="Model\InboxFileDetailsInfo.cs" />
+    <Compile Include="Model\InboxReplyFileDetailsInfo.cs" />
+    <Compile Include="Model\InboxReplyInfo.cs" />
+    <Compile Include="Model\LandingPageInfo.cs" />
+    <Compile Include="Model\LandingPageRootInfo.cs" />
+    <Compile Include="Model\LeaveFilterInfo.cs" />
+    <Compile Include="Model\LeaveListInfo.cs" />
+    <Compile Include="Model\LeaveListInfoRoot.cs" />
+    <Compile Include="Model\LeaveRequestInfo.cs" />
+    <Compile Include="Model\LibraryInfo.cs" />
+    <Compile Include="Model\LibraryInfoRoot.cs" />
+    <Compile Include="Model\MarkInfo.cs" />
+    <Compile Include="Model\MarkInfoRoot.cs" />
+    <Compile Include="Model\MeetingStatusInfo.cs" />
+    <Compile Include="Model\MessageInfo.cs" />
+    <Compile Include="Model\NoticeBoardListInfo.cs" />
+    <Compile Include="Model\NoticeBoardListInfoRoot.cs" />
+    <Compile Include="Model\OexamResultInfo.cs" />
+    <Compile Include="Model\OnlineDExamListInfo.cs" />
+    <Compile Include="Model\OnlineDExamListRootInfo.cs" />
+    <Compile Include="Model\OnlineExamListInfo.cs" />
+    <Compile Include="Model\OnlineExamListRootInfo.cs" />
+    <Compile Include="Model\OnlineExamListRootNewInfo.cs" />
+    <Compile Include="Model\OnlineExamResultRootInfo.cs" />
+    <Compile Include="Model\OnlineExamStudentResultInfo.cs" />
+    <Compile Include="Model\OnlineExamTopperListInfo.cs" />
+    <Compile Include="Model\OptionAttemptInfo.cs" />
+    <Compile Include="Model\OptionAttemptRootInfo.cs" />
+    <Compile Include="Model\OptionsListInfo.cs" />
+    <Compile Include="Model\OptionSubmitInfo.cs" />
+    <Compile Include="Model\ParentAccountInfo.cs" />
+    <Compile Include="Model\ParentLoginRequest.cs" />
+    <Compile Include="Model\ParentLoginResponse.cs" />
+    <Compile Include="Model\PaymentModePaid.cs" />
+    <Compile Include="Model\PeriodInfo.cs" />
+    <Compile Include="Model\QuestionListInfo.cs" />
+    <Compile Include="Model\QuestionListRootInfo.cs" />
+    <Compile Include="Model\RegistrationInfo.cs" />
+    <Compile Include="Model\ResultInfo.cs" />
+    <Compile Include="Model\ResultInfoRoot.cs" />
+    <Compile Include="Model\ResultNewInfo.cs" />
+    <Compile Include="Model\StartMeetingInfo.cs" />
+    <Compile Include="Model\StartMeetingRootInfo.cs" />
+    <Compile Include="Model\StudentProfileInfo.cs" />
+    <Compile Include="Model\StudyMaterialListInfo.cs" />
+    <Compile Include="Model\PassDailyDataModel.cs" />
+    <Compile Include="Model\StudyMaterialListInfoRoot.cs" />
+    <Compile Include="Model\SubjectListInfo.cs" />
+    <Compile Include="Model\SubjectListRootInfo.cs" />
+    <Compile Include="Model\SyllabusInfo.cs" />
+    <Compile Include="Model\SyllabusRootInfo.cs" />
+    <Compile Include="Model\TermFeePaidDetails.cs" />
+    <Compile Include="Model\TermFeePay FeeSetup.cs" />
+    <Compile Include="Model\TermFeeReceiptDetail.cs" />
+    <Compile Include="Model\TermFeeReceiptRoot.cs" />
+    <Compile Include="Model\TermFeeReceiptRoot1.cs" />
+    <Compile Include="Model\VideoInfo.cs" />
+    <Compile Include="Model\YoutubeListInfo.cs" />
+    <Compile Include="Model\YoutubeListRootInfo.cs" />
+    <Compile Include="Model\ZoomMeetingInfo.cs" />
+    <Compile Include="Model\ZoomMeetingRootInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Abstract\IAccademicRepository.cs" />
+    <Compile Include="Repository\Abstract\IAlbumImageRepository.cs" />
+    <Compile Include="Repository\Abstract\IAlbumVideoRepository.cs" />
+    <Compile Include="Repository\Abstract\IAppInboxRepository.cs" />
+    <Compile Include="Repository\Abstract\IAttendanceRepository.cs" />
+    <Compile Include="Repository\Abstract\IConveyorRepository.cs" />
+    <Compile Include="Repository\Abstract\IDashboardRepository.cs" />
+    <Compile Include="Repository\Abstract\IDataRepository.cs" />
+    <Compile Include="Repository\Abstract\IEnquiryRepository.cs" />
+    <Compile Include="Repository\Abstract\IExamRepository.cs" />
+    <Compile Include="Repository\Abstract\IFeesRepository.cs" />
+    <Compile Include="Repository\Abstract\IGpsRepository.cs" />
+    <Compile Include="Repository\Abstract\ILeaveRepository.cs" />
+    <Compile Include="Repository\Abstract\ILibraryRepository.cs" />
+    <Compile Include="Repository\Abstract\IMessageRepository.cs" />
+    <Compile Include="Repository\Abstract\INoticeBoardRepository.cs" />
+    <Compile Include="Repository\Abstract\IOnlineExamRepository.cs" />
+    <Compile Include="Repository\Abstract\IParentAccountRepository.cs" />
+    <Compile Include="Repository\Abstract\IParentLoginRepository.cs" />
+    <Compile Include="Repository\Abstract\IResultRepository.cs" />
+    <Compile Include="Repository\Abstract\IStudyMaterialRepository.cs" />
+    <Compile Include="Repository\Impl\AccademicRepository.cs" />
+    <Compile Include="Repository\Impl\AlbumImageRepository.cs" />
+    <Compile Include="Repository\Impl\AlbumVideoRepository.cs" />
+    <Compile Include="Repository\Impl\AppInboxRepository.cs" />
+    <Compile Include="Repository\Impl\AttendanceRepository.cs" />
+    <Compile Include="Repository\Impl\ConveyorRepository.cs" />
+    <Compile Include="Repository\Impl\DashboardRepository.cs" />
+    <Compile Include="Repository\Impl\DataRepository.cs" />
+    <Compile Include="Repository\Impl\EnquiryRepository.cs" />
+    <Compile Include="Repository\Impl\ExamRepository.cs" />
+    <Compile Include="Repository\Impl\FeesRepository.cs" />
+    <Compile Include="Repository\Impl\GpsRepository.cs" />
+    <Compile Include="Repository\Impl\LeaveRepository.cs" />
+    <Compile Include="Repository\Impl\LibraryRepository.cs" />
+    <Compile Include="Repository\Impl\MessageRepository.cs" />
+    <Compile Include="Repository\Impl\NoticeBoardRepository.cs" />
+    <Compile Include="Repository\Impl\OnlineExamRepository.cs" />
+    <Compile Include="Repository\Impl\ParentAccountRepository.cs" />
+    <Compile Include="Repository\Impl\ParentLoginRepository.cs" />
+    <Compile Include="Repository\Impl\ResultRepository.cs" />
+    <Compile Include="Repository\Impl\StudyMaterialRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
